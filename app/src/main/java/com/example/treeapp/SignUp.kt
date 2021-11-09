@@ -8,9 +8,11 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up2)
         val actionBar = supportActionBar
-        actionBar!!.title = "Sign Up"
 
-        actionBar.setDisplayHomeAsUpEnabled(true)
+
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true)
+        }
 
     }
 }
